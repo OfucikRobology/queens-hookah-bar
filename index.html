@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen's – Lounge & Hookah Bar Písek</title>
+    <meta name="description" content="Queen's Lounge & Hookah Bar v Písku. Koktejly, vodní dýmky, sportovní přenosy a privátní akce v luxusní atmosféře.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Age Verification Modal -->
+    <div id="age-modal" class="age-modal">
+        <div class="age-modal-content">
+            <div class="age-modal-icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h2>Queen's Lounge & Hookah Bar</h2>
+            <p>Pro vstup na tyto stránky musíte být starší 18 let.</p>
+            <p class="age-modal-question">Je vám již 18 let?</p>
+            <div class="age-modal-buttons">
+                <button id="age-yes" class="btn btn-gold">Ano, je mi 18+</button>
+                <button id="age-no" class="btn btn-outline">Ne, ještě ne</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-crown"><i class="fas fa-crown"></i></div>
+            <div class="preloader-text">Queen's</div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <i class="fas fa-crown"></i>
+                <span>Queen's</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">O nás</a></li>
+                <li><a href="#menu" class="nav-link">Nabídka</a></li>
+                <li><a href="#services" class="nav-link">Služby</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#reservation" class="nav-link">Rezervace</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <button class="nav-hamburger" id="hamburger" aria-label="Otevřít menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">Lounge & Hookah Bar</div>
+            <h1 class="hero-title reveal">
+                <span class="hero-title-line">Queen's</span>
+            </h1>
+            <p class="hero-subtitle reveal">Tvoje místo pro relax, dýmku a skvělé drinky v&nbsp;srdci Písku</p>
+            <div class="hero-buttons reveal">
+                <a href="#reservation" class="btn btn-gold btn-lg">
+                    <i class="fas fa-calendar-check"></i>
+                    Rezervovat stůl
+                </a>
+                <a href="#about" class="btn btn-outline btn-lg">
+                    Poznat více
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">O nás</span>
+                <h2 class="section-title">Vítejte v <span class="text-gold">Queen's</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">V Queen's si najde své místo každý.</p>
+                    <p>Přijďte si užít unikátní atmosféru, vychutnat míchané drinky, prémiové sekty a vodní dýmky. Ideální místo pro přátele, sportovní přenosy i soukromé oslavy.</p>
+                    <p>Náš bar kombinuje moderní design s útulnou atmosférou, kde se potkává elegance s pohodou. Ať už hledáte klidný večer u vodní dýmky, nebo chcete sledovat zápas s přáteli – u nás jste na správném místě.</p>
+                </div>
+                <div class="about-features">
+                    <div class="about-feature reveal">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <div class="about-feature-text">
+                            <h3>Koktejly & Drinky</h3>
+                            <p>Prémiové míchané drinky od našich barmanů</p>
+                        </div>
+                    </div>
+                    <div class="about-feature reveal">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="about-feature-text">
+                            <h3>Vodní dýmky</h3>
+                            <p>Široký výběr příchutí prémiového tabáku</p>
+                        </div>
+                    </div>
+                    <div class="about-feature reveal">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="about-feature-text">
+                            <h3>Sport & Zábava</h3>
+                            <p>Živé přenosy na velkoplošných obrazovkách</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Co nabízíme</span>
+                <h2 class="section-title">Naše <span class="text-gold">nabídka</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-tab="cocktails">
+                    <i class="fas fa-cocktail"></i>
+                    <span>Koktejly & Drinky</span>
+                </button>
+                <button class="menu-tab" data-tab="hookah">
+                    <i class="fas fa-wind"></i>
+                    <span>Vodní dýmky</span>
+                </button>
+                <button class="menu-tab" data-tab="sport">
+                    <i class="fas fa-tv"></i>
+                    <span>Sport</span>
+                </button>
+            </div>
+
+            <!-- Cocktails Tab -->
+            <div class="menu-content active" id="tab-cocktails">
+                <div class="menu-grid">
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-martini-glass-citrus"></i></div>
+                        <h3>Klasické koktejly</h3>
+                        <p>Mojito, Aperol Spritz, Gin Tonic, Margarita, Cosmopolitan a další klasiky v perfektním provedení.</p>
+                        <span class="menu-card-price">od 149 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3>Signature drinky</h3>
+                        <p>Autorské koktejly Queen's baru – unikátní kombinace chutí, které jinde nenajdete.</p>
+                        <span class="menu-card-price">od 179 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-champagne-glasses"></i></div>
+                        <h3>Prémiové sekty & vína</h3>
+                        <p>Výběr italských prosecco, šampaňských a kvalitních vín z celého světa.</p>
+                        <span class="menu-card-price">od 89 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-beer-mug-empty"></i></div>
+                        <h3>Nealko & pivo</h3>
+                        <p>Domácí limonády, nealkoholické koktejly, točené i lahvové pivo.</p>
+                        <span class="menu-card-price">od 49 Kč</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hookah Tab -->
+            <div class="menu-content" id="tab-hookah">
+                <div class="menu-grid">
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Klasické příchutě</h3>
+                        <p>Jablko, máta, broskev, borůvka, citron a další osvědčené oblíbené příchutě.</p>
+                        <span class="menu-card-price">od 249 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-star"></i></div>
+                        <h3>Prémiové mixy</h3>
+                        <p>Unikátní kombinace příchutí namíchané přímo u nás – výběr sezónních specialit.</p>
+                        <span class="menu-card-price">od 299 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Beznikotinové varianty</h3>
+                        <p>Pro ty, kteří si chtějí užít vodní dýmku bez nikotinu. Plná chuť, žádný nikotin.</p>
+                        <span class="menu-card-price">od 279 Kč</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-fire"></i></div>
+                        <h3>Heat management</h3>
+                        <p>Moderní technologie pro dokonalý zážitek. Kvalitní uhlíky a profesionální příprava.</p>
+                        <span class="menu-card-price">v ceně</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sport Tab -->
+            <div class="menu-content" id="tab-sport">
+                <div class="menu-grid">
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-futbol"></i></div>
+                        <h3>Fotbal</h3>
+                        <p>Všechny důležité ligové zápasy, Champions League, Euro a MS na velkoplošné obrazovce.</p>
+                        <span class="menu-card-price">vstup zdarma</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-hockey-puck"></i></div>
+                        <h3>Hokej</h3>
+                        <p>Extraliga, NHL a mezinárodní turnaje. Atmosféra jako na stadionu.</p>
+                        <span class="menu-card-price">vstup zdarma</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-hand-fist"></i></div>
+                        <h3>UFC & box</h3>
+                        <p>Přenosy těch největších zápasů MMA a boxerských galí.</p>
+                        <span class="menu-card-price">vstup zdarma</span>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-card-icon"><i class="fas fa-trophy"></i></div>
+                        <h3>Speciální eventy</h3>
+                        <p>Rezervujte si stůl u obrazovky pro důležité sportovní události. Včas nám dejte vědět!</p>
+                        <span class="menu-card-price">rezervace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Pro vás</span>
+                <h2 class="section-title">Speciální <span class="text-gold">služby</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-card-bg"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">01</div>
+                        <div class="service-card-icon"><i class="fas fa-champagne-glasses"></i></div>
+                        <h3>Soukromé akce</h3>
+                        <p>Pronájem prostoru pro narozeniny, oslavy, firemní večírky a speciální příležitosti. Sestavíme nabídku přesně na míru vašim představám.</p>
+                        <a href="#reservation" class="service-card-link">
+                            Zjistit více <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-card-bg"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">02</div>
+                        <div class="service-card-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>Rezervace stolu</h3>
+                        <p>Zarezervujte si stůl online nebo telefonicky. Vyberte si své oblíbené místo a přijďte si užít večer bez starostí.</p>
+                        <a href="#reservation" class="service-card-link">
+                            Rezervovat <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-card-bg"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">03</div>
+                        <div class="service-card-icon"><i class="fas fa-gift"></i></div>
+                        <h3>Dárkové poukazy</h3>
+                        <p>Ideální dárek pro přátele a blízké. Darujte zážitek – koktejly, vodní dýmku nebo celý večer v Queen's.</p>
+                        <a href="#contact" class="service-card-link">
+                            Objednat <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Atmosféra</span>
+                <h2 class="section-title">Naše <span class="text-gold">galerie</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item gallery-item-tall">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #1a1020 0%, #2d1b3e 50%, #1a1020 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Interiér baru</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #1a1a0a 0%, #2d2510 50%, #1a1a0a 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Koktejly</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #0a1a1a 0%, #102d2d 50%, #0a1a1a 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Vodní dýmky</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #1a100a 0%, #2d1a10 50%, #1a100a 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Lounge zóna</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-tall">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #10101a 0%, #1a1a2d 50%, #10101a 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Bar</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide">
+                    <div class="gallery-img" style="background: linear-gradient(135deg, #1a0a1a 0%, #2d102d 50%, #1a0a1a 100%);"></div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-expand"></i>
+                        <span>Večerní atmosféra</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section reservation">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Rezervace</span>
+                <h2 class="section-title">Rezervujte si <span class="text-gold">stůl</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Zajistěte si místo a užijte si večer bez starostí</p>
+            </div>
+            <div class="reservation-wrapper reveal">
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-name">Jméno a příjmení</label>
+                            <input type="text" id="res-name" name="name" placeholder="Jan Novák" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-phone">Telefon</label>
+                            <input type="tel" id="res-phone" name="phone" placeholder="+420 123 456 789" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Datum</label>
+                            <input type="date" id="res-date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Čas</label>
+                            <input type="time" id="res-time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-guests">Počet osob</label>
+                            <select id="res-guests" name="guests" required>
+                                <option value="">Vyberte...</option>
+                                <option value="1">1 osoba</option>
+                                <option value="2">2 osoby</option>
+                                <option value="3">3 osoby</option>
+                                <option value="4">4 osoby</option>
+                                <option value="5">5 osob</option>
+                                <option value="6">6 osob</option>
+                                <option value="7-10">7–10 osob</option>
+                                <option value="10+">10+ osob (soukromá akce)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-note">Poznámka</label>
+                            <input type="text" id="res-note" name="note" placeholder="Speciální požadavky...">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-lg btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Odeslat rezervaci
+                    </button>
+                </form>
+                <div class="reservation-info">
+                    <div class="reservation-info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefonická rezervace</h4>
+                            <p>+420 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="reservation-info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Rezervujte předem</h4>
+                            <p>Doporučujeme alespoň 24 hodin předem</p>
+                        </div>
+                    </div>
+                    <div class="reservation-info-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Skupiny 10+</h4>
+                            <p>Kontaktujte nás pro individuální nabídku</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Najdete nás</span>
+                <h2 class="section-title">Kontakt & <span class="text-gold">otevírací doba</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <h4>Adresa</h4>
+                            <p>Písek, Jižní Čechy</p>
+                            <p class="text-muted">Přesná adresa bude doplněna</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+420 XXX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>info@queenspisek.cz</p>
+                        </div>
+                    </div>
+                    <div class="contact-hours">
+                        <h4><i class="fas fa-clock"></i> Otevírací doba</h4>
+                        <div class="hours-table">
+                            <div class="hours-row">
+                                <span>Pondělí – Čtvrtek</span>
+                                <span>16:00 – 00:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>Pátek – Sobota</span>
+                                <span>16:00 – 02:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>Neděle</span>
+                                <span>16:00 – 23:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map reveal">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20894.02526847474!2d14.133!3d49.309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b4f40f7fa7bb9%3A0x400af0f6614f680!2zUMOtc2Vr!5e0!3m2!1scs!2scz!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <i class="fas fa-crown"></i>
+                        <span>Queen's</span>
+                    </a>
+                    <p>Lounge & Hookah Bar Písek</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">O nás</a>
+                    <a href="#menu">Nabídka</a>
+                    <a href="#services">Služby</a>
+                    <a href="#gallery">Galerie</a>
+                    <a href="#reservation">Rezervace</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Queen's Lounge & Hookah Bar Písek. Všechna práva vyhrazena.</p>
+                <div class="footer-age">
+                    <i class="fas fa-ban"></i>
+                    <span>Vstup pouze pro osoby starší 18 let. Kouření škodí zdraví.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
